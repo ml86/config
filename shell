@@ -1,0 +1,11 @@
+#add to shell config: source <path/to/this/file>
+
+v() {
+  vim -c ScratchBuffer -
+}
+
+findname() {
+  find $1 -name "*$2*"
+}
+
+set -o vi
