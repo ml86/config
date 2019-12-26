@@ -1,0 +1,25 @@
+# Add the following to /usr/share/X11/xkb/symbols/de:
+
+partial alphanumeric_keyrights
+xkb_symbols "markus" {
+    // My custom layout
+
+    include "de(basic)"
+    name[Group1]="German (markus)";
+
+    key <AD02>	{ [         w,          W,     braceleft,     braceleft ]	};
+    key <AD04>	{ [         r,          R,     braceright,     braceright ]	};
+    key <AC02>  { [         s,          S,     bracketleft,     bracketleft    ] };
+    key <AC04>  { [         f,          F,     bracketright,     bracketright    ] };
+};
+
+
+# Add the following into the German(de) section of /usr/share/X11/xkb/rules/evdev.xml:
+
+<variant>
+  <configItem>
+    <name>markus</name>
+    <description>German (markus)</description>
+  </configItem>
+</variant>
+
