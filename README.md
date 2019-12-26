@@ -1,0 +1,2 @@
+Non automated configurations:
+- xkbSymbols
